@@ -18,7 +18,7 @@ public:
             }
             
             if(B[i] > A[i - 1] && A[i] > B[i - 1]) {
-                //do not swap at i - 1 an dswap a t i
+                //do not swap at i - 1 and swap at i
                 swap[i] = min(swap[i], no_swap[i - 1] + 1);
                 //do not swap at i and swap at i - 1
                 no_swap[i] = min(no_swap[i], swap[i - 1]);
